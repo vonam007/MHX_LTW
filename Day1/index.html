@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cryptologos.cc/logos/catcoin-token-cats-logo.png" type="image/x-icon">
+    <title>Meowville</title>
+    <link rel = "stylesheet" href = "css/style.css">
+
+</head>
+<body>
+    <h1  id="title">
+        Meowville: A Cat Lover's Paradise
+    </h1>
+    <form class="form_container form_contain" id="form_contain">
+    <div class="">
+        <h3 class="form_contain title_name">
+            Create a Cat
+        </h3>
+    </div>
+    <div class="form_contain name_contain">
+        <label for="name" class="label">Name</label>
+        <input type="text" name="name" id="name" class="inputbox" placeholder="name here">
+    </div>
+    <div class="form_contain state_contain">
+        <label for="state" class="label">State</label>
+        <select name="state" id="state" class="state inputbox" >
+            <option value="" selected>Select stage</option>
+            <option value="kitten">Kitten</option>
+            <option value="young">Young</option>
+            <option value="adult">Adult</option>
+        </select>
+    </div>
+    <div class="form_contain breed_contain">
+        <label for="breed" class="label">Breed</label>
+        <input type="text" name="breed" id="breed" class="inputbox" placeholder="bread here">
+    </div>
+    <input type="submit" class="create_btn" value="Create a Cat"></button>
+    </form>
+    <div class="cat_card_contain" id="cat_card_contain">
+        
+    </div>
+
+    <script src="js/index.js" type='module'></script>
+</body>
+</html>
