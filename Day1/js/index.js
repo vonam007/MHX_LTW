@@ -6,7 +6,7 @@ form.addEventListener('submit', async function(event) {
     event.preventDefault(); 
 
     let name = document.getElementById('name').value;
-    let state = document.getElementById('state').value;
+    let stage = document.getElementById('stage').value;
     let breed = document.getElementById('breed').value;
 
     // Kiểm tra dữ liệu
@@ -14,7 +14,7 @@ form.addEventListener('submit', async function(event) {
         alert('Vui lòng nhập tên!');
         return;
     
-    } else if (state == '') {
+    } else if (stage == '') {
         alert('Vui lòng chọn lại giai đoạn phát triển!');
         return;
     }
@@ -23,7 +23,7 @@ form.addEventListener('submit', async function(event) {
         return;
     }
     console.log(name);
-    console.log(state);
+    console.log(stage);
     console.log(breed);
 
     // Submit form
@@ -32,7 +32,7 @@ form.addEventListener('submit', async function(event) {
     let url_cat = 'https://cataas.com/cat?tag=' + tag;
     let color = randomColor();
     console.log(color);
-    let temptext = '<div class="cat_card" style="background-color:'+color+';"><div class="cat_card_img"><img src="'+ url_cat +'" alt="" class="cat_img"></div><ul class="cat_card_info"><li class="cat_name">' + name + '</li><li class="cat_breed">' + breed + '</li><li class="cat_state">'+ state + '</li></ul></div>';
+    let temptext = '<div class="cat_card" style="background-color:'+color+';"><div class="cat_card_img"><img src="'+ url_cat +'" alt="" class="cat_img"></div><ul class="cat_card_info"><li class="cat_name">' + name + '</li><li class="cat_breed">' + breed + '</li><li class="cat_stage">'+ stage + '</li></ul></div>';
     CardContain.innerHTML += temptext;
 
     
